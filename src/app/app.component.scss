@@ -6,6 +6,10 @@
   top: 0;
 }
 
+.page {
+  height: 100%;
+}
+
 .container {
   display: flex;
   height: 100%;
@@ -14,8 +18,34 @@
   align-items: center;
 }
 
-.startButton {
-  height: 50px;
-  width: 250px;
-  border-radius: 2em;
+.btn-2g {
+  border-radius: 40px;
+}
+
+.btn-2 {
+  color: #fff;
+  box-shadow: 0 6px #082b3f;
+  -webkit-transition: none;
+  -moz-transition: none;
+  transition: none;
+}
+
+.btn {
+  background-color: #178ed2;
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  cursor: pointer;
+  padding: 25px 80px;
+  display: inline-block;
+  margin: 15px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-weight: 700;
+  outline: none;
+  position: relative;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
 }

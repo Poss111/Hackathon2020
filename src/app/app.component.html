@@ -1,11 +1,12 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<h1>{{title}}</h1>
-<div class="container">
-  <div *ngIf="loading; else elseBlock">
-    <app-terminal></app-terminal>
+<div class="page">
+  <app-header></app-header>
+  <div class="container">
+    <div *ngIf="loading; else elseBlock">
+      <app-terminal></app-terminal>
+    </div>
+    <ng-template #elseBlock>
+      <button class="btn btn-2 btn-2g" *ngIf="!startJob" (click)="startSeleniumGrid()">Start</button>
+      <app-spinner *ngIf="startJob"></app-spinner>
+    </ng-template>
   </div>
-  <ng-template #elseBlock>
-    <button class="startButton" *ngIf="!startJob" (click)="startSeleniumGrid()">Start</button>
-    <app-spinner *ngIf="startJob"></app-spinner>
-  </ng-template>
 </div>
