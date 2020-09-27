@@ -1,0 +1,17 @@
+.outerBox {
+  padding: 2px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.innerBox {
+  border: 10px #082b3f solid;
+  border-radius: 5px;
+  padding: 2px;
+  width: 500px;
+  height: 500px;
+  background-color: white;
+  overflow-y: auto;
+  flex-direction: column-reverse;
+}
